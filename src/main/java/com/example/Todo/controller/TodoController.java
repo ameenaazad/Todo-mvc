@@ -47,7 +47,6 @@ public class TodoController {
 		Todo todo = todoService.getTodo(id)
 				.orElseThrow(() -> new RuntimeException("Employee not found"));
 		todoService.change(todo);
-		System.out.println("This is todooooooo"+todo);
 		return "redirect:/";
 		
 		
